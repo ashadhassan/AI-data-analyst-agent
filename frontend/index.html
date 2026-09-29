@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Data Analyst</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">AI</div>
+
+                <div>
+                    <h2>Data Analyst</h2>
+                    <span>AI-powered analytics</span>
+                </div>
+            </div>
+
+
+            <div class="sidebar-section">
+
+                <div class="section-title">
+                    DATABASE
+                </div>
+
+                <div class="database-status">
+                    <span class="status-dot"></span>
+                    <span>Connected</span>
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-section">
+
+                <div class="section-title">
+                    EXAMPLE QUESTIONS
+                </div>
+
+                <button class="example-question">
+                    What are the top 3 products by revenue?
+                </button>
+
+                <button class="example-question">
+                    Which city has the most customers?
+                </button>
+
+                <button class="example-question">
+                    What is the average revenue per delivered order?
+                </button>
+
+                <button class="example-question">
+                    Which product category generates the most revenue?
+                </button>
+
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                <button id="clearChat" class="clear-button">
+                    Clear conversation
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Header -->
+            <header class="topbar">
+
+                <div>
+                    <h1>AI Data Analyst</h1>
+                    <p>Ask questions and get insights from your business data.</p>
+                </div>
+
+                <div class="connection">
+                    <span class="status-dot"></span>
+                    MySQL
+                </div>
+
+            </header>
+
+
+            <!-- Chat -->
+            <section id="chatBox" class="chat-box">
+
+                <!-- Welcome -->
+                <div id="welcome" class="welcome">
+
+                    <div class="welcome-icon">
+                        ✦
+                    </div>
+
+                    <h2>Analyze your data with AI</h2>
+
+                    <p>
+                        Ask a business question in natural language.
+                        I'll analyze your database and provide an answer.
+                    </p>
+
+                    <div class="suggestions">
+
+                        <button class="suggestion">
+                            Top 3 products by revenue
+                        </button>
+
+                        <button class="suggestion">
+                            Customers by city
+                        </button>
+
+                        <button class="suggestion">
+                            Average delivered order revenue
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Input -->
+            <div class="input-wrapper">
+
+                <div class="input-container">
+
+                    <textarea
+                        id="questionInput"
+                        rows="1"
+                        placeholder="Ask a question about your data..."
+                    ></textarea>
+
+                    <button id="askButton" class="send-button" title="Analyze">
+
+                        <span>➤</span>
+
+                    </button>
+
+                </div>
+
+                <div class="input-hint">
+                    Press Enter to send • Shift + Enter for a new line
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
